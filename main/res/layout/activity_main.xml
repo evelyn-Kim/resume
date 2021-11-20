@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/EditText_name"
+        android:layout_width="125dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="28dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditText_phone"
+        android:layout_width="125dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="28dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText_name" />
+
+    <EditText
+        android:id="@+id/EditText_address"
+        android:layout_width="293dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="31dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText_phone" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:text="이름 :"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/EditText_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+        android:text="연락처 :"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/EditText_phone"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+
+    <TextView
+        android:id="@+id/textView_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="9dp"
+        android:text="주소 :"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/EditText_address"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/TableLayout"
+        android:layout_width="355dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="27dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_background">
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/EditText_1"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="22dp"
+                tools:layout_editor_absoluteY="401dp" />
+
+            <EditText
+                android:id="@+id/EditText_2"
+                android:layout_width="183dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="125dp"
+                tools:layout_editor_absoluteY="460dp" />
+
+            <EditText
+                android:id="@+id/EditText_3"
+                android:layout_width="69dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/EditText_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/EditText_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/EditText_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="338dp"
+            android:layout_height="49dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/EditText_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/EditText_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/EditText_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:textSize="15sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="343dp"
+        android:text="학력"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_address" />
+
+    <TextView
+        android:id="@+id/textView_introduce"
+        android:layout_width="80dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="302dp"
+        android:text="본인소개"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TableLayout" />
+
+    <TableRow
+        android:layout_width="359dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="23dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_introduce">
+
+        <EditText
+            android:id="@+id/EditText_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:background="@color/white" />
+    </TableRow>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_insert_photo_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
